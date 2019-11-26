@@ -1,0 +1,28 @@
+.App {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+
+  > .left {
+    flex-basis: 220px;
+    flex-shrink: 0;
+  }
+
+  > .right {
+    flex-grow: 1;
+  }
+
+  .main-content {
+    padding: 0 25px;
+  }
+
+
+  .status-cards-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .graph-card-container {
+
+  }
+}

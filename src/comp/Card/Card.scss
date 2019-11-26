@@ -1,0 +1,29 @@
+.card {
+  background-color: var(--white);
+  border-top: 3px solid var(--gray-200);
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--gray-200);
+    font-size: 12px;
+    font-weight: 500;
+
+    .action-buttons {
+      .anticon {
+        margin: 0 5px;
+        cursor: pointer;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+}
+

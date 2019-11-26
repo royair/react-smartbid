@@ -1,0 +1,16 @@
+.card.status-card {
+  flex-basis: 24%;
+
+  .card-body {
+
+    .value {
+      font-size: 36px;
+      line-height: 1.5;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
