@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-smartbid/static/css/main.c789fad4.chunk.css",
+    "main.css": "/react-smartbid/static/css/main.5be1fe8f.chunk.css",
     "main.js": "/react-smartbid/static/js/main.5cf14060.chunk.js",
     "main.js.map": "/react-smartbid/static/js/main.5cf14060.chunk.js.map",
     "runtime-main.js": "/react-smartbid/static/js/runtime-main.4c2afe2f.js",
@@ -9,10 +9,10 @@
     "static/js/2.f3833d36.chunk.js": "/react-smartbid/static/js/2.f3833d36.chunk.js",
     "static/js/2.f3833d36.chunk.js.map": "/react-smartbid/static/js/2.f3833d36.chunk.js.map",
     "index.html": "/react-smartbid/index.html",
-    "precache-manifest.2e19ea150004eda2b9a76d6bd8fd4755.js": "/react-smartbid/precache-manifest.2e19ea150004eda2b9a76d6bd8fd4755.js",
+    "precache-manifest.ecb9dcc79278605fe966ed8d84b30d79.js": "/react-smartbid/precache-manifest.ecb9dcc79278605fe966ed8d84b30d79.js",
     "service-worker.js": "/react-smartbid/service-worker.js",
     "static/css/2.117ce29f.chunk.css.map": "/react-smartbid/static/css/2.117ce29f.chunk.css.map",
-    "static/css/main.c789fad4.chunk.css.map": "/react-smartbid/static/css/main.c789fad4.chunk.css.map",
+    "static/css/main.5be1fe8f.chunk.css.map": "/react-smartbid/static/css/main.5be1fe8f.chunk.css.map",
     "static/media/graph.png": "/react-smartbid/static/media/graph.fc4fce5f.png",
     "static/media/map.png": "/react-smartbid/static/media/map.a79e2456.png",
     "static/media/profile-image.jpg": "/react-smartbid/static/media/profile-image.cfe1ce66.jpg"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.4c2afe2f.js",
     "static/css/2.117ce29f.chunk.css",
     "static/js/2.f3833d36.chunk.js",
-    "static/css/main.c789fad4.chunk.css",
+    "static/css/main.5be1fe8f.chunk.css",
     "static/js/main.5cf14060.chunk.js"
   ]
 }
