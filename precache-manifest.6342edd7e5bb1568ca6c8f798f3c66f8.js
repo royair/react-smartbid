@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "712609bcaf5a55ae4da9f6670ff6fae3",
+    "revision": "0b3322db2cdce6b7fb3d708bfe2804a2",
     "url": "/react-smartbid/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-smartbid/static/css/2.117ce29f.chunk.css"
   },
   {
-    "revision": "3a91203abd0ced4dba12",
+    "revision": "9702bdd374fda077e035",
     "url": "/react-smartbid/static/css/main.5be1fe8f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-smartbid/static/js/2.f3833d36.chunk.js"
   },
   {
-    "revision": "3a91203abd0ced4dba12",
-    "url": "/react-smartbid/static/js/main.5cf14060.chunk.js"
+    "revision": "9702bdd374fda077e035",
+    "url": "/react-smartbid/static/js/main.2a570300.chunk.js"
   },
   {
     "revision": "46db6ebbfa288e67275f",

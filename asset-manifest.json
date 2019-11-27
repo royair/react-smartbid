@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-smartbid/static/css/main.5be1fe8f.chunk.css",
-    "main.js": "/react-smartbid/static/js/main.5cf14060.chunk.js",
-    "main.js.map": "/react-smartbid/static/js/main.5cf14060.chunk.js.map",
+    "main.js": "/react-smartbid/static/js/main.2a570300.chunk.js",
+    "main.js.map": "/react-smartbid/static/js/main.2a570300.chunk.js.map",
     "runtime-main.js": "/react-smartbid/static/js/runtime-main.4c2afe2f.js",
     "runtime-main.js.map": "/react-smartbid/static/js/runtime-main.4c2afe2f.js.map",
     "static/css/2.117ce29f.chunk.css": "/react-smartbid/static/css/2.117ce29f.chunk.css",
     "static/js/2.f3833d36.chunk.js": "/react-smartbid/static/js/2.f3833d36.chunk.js",
     "static/js/2.f3833d36.chunk.js.map": "/react-smartbid/static/js/2.f3833d36.chunk.js.map",
     "index.html": "/react-smartbid/index.html",
-    "precache-manifest.ecb9dcc79278605fe966ed8d84b30d79.js": "/react-smartbid/precache-manifest.ecb9dcc79278605fe966ed8d84b30d79.js",
+    "precache-manifest.6342edd7e5bb1568ca6c8f798f3c66f8.js": "/react-smartbid/precache-manifest.6342edd7e5bb1568ca6c8f798f3c66f8.js",
     "service-worker.js": "/react-smartbid/service-worker.js",
     "static/css/2.117ce29f.chunk.css.map": "/react-smartbid/static/css/2.117ce29f.chunk.css.map",
     "static/css/main.5be1fe8f.chunk.css.map": "/react-smartbid/static/css/main.5be1fe8f.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.117ce29f.chunk.css",
     "static/js/2.f3833d36.chunk.js",
     "static/css/main.5be1fe8f.chunk.css",
-    "static/js/main.5cf14060.chunk.js"
+    "static/js/main.2a570300.chunk.js"
   ]
 }
