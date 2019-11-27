@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-smartbid/precache-manifest.c2d2a886d0ed6b1b588ac85909531a20.js"
+  "/react-smartbid/precache-manifest.1db81aaaa0efcba675bd64884402d783.js"
 );
 
 self.addEventListener('message', (event) => {
