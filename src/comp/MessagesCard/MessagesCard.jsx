@@ -1,7 +1,7 @@
 import React from 'react';
 import { Icon } from 'antd';
 
-import Card from '../Card/Card';
+import { Card} from '@comp';
 
 import './MessagesCard.scss';
 
@@ -9,13 +9,8 @@ export default function MessagesCard() {
 
   return (
     <Card className="messages-card">
-      <Card.Header>
+      <Card.Header withActionButtons>
         Messages
-        <div className="action-buttons">
-          <Icon type="up" />
-          <Icon type="tool" />
-          <Icon type="setting" />
-        </div>
       </Card.Header>
       <Card.Body>
         <section className="notifications">
@@ -26,7 +21,7 @@ export default function MessagesCard() {
               position: 'relative',
               top: 2
             }} />
-            <h1 style={{ fontSize: 36 }}>New Messages</h1>
+            <h1 style={{ fontSize: 36 }}>New messages</h1>
           </div>
           <div>You have 22 new messages and 16 waiting in draft folder</div>
         </section>

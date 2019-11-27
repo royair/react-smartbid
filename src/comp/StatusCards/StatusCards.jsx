@@ -1,14 +1,14 @@
 import React from 'react';
-import Card from '../Card/Card';
-import Label from '../Label/Label';
 import { Icon } from 'antd';
+
+import { Card, Label } from '@comp';
 
 import './StatusCards.scss';
 
 export default function StatusCards() {
   return (
     <>
-      <Card className="status-card">
+      <Card className="col-3 status-card">
         <Card.Header>
           <span>Income</span>
           <Label type="monthly">Monthly</Label>
@@ -16,7 +16,7 @@ export default function StatusCards() {
         <Card.Body>
           <div className="value">40,886,200</div>
           <footer>
-            <span className="label">Total income</span>
+            <span className="text-label">Total income</span>
             <span className="percentage">
                   98%
                   <Icon type="rise" />
@@ -25,7 +25,7 @@ export default function StatusCards() {
         </Card.Body>
       </Card>
 
-      <Card className="status-card">
+      <Card className="col-3 status-card">
         <Card.Header>
           <span>Income</span>
           <Label type="monthly">Monthly</Label>
@@ -33,7 +33,7 @@ export default function StatusCards() {
         <Card.Body>
           <div className="value">40,886,200</div>
           <footer>
-            <span className="label">Total income</span>
+            <span className="text-label">Total income</span>
             <span className="percentage">
                   98%
                   <Icon type="rise" />
@@ -42,7 +42,7 @@ export default function StatusCards() {
         </Card.Body>
       </Card>
 
-      <Card className="status-card">
+      <Card className="col-3 status-card">
         <Card.Header>
           <span>Income</span>
           <Label type="monthly">Monthly</Label>
@@ -50,7 +50,7 @@ export default function StatusCards() {
         <Card.Body>
           <div className="value">40,886,200</div>
           <footer>
-            <span className="label">Total income</span>
+            <span className="text-label">Total income</span>
             <span className="percentage">
                   98%
                   <Icon type="rise" />
@@ -59,7 +59,7 @@ export default function StatusCards() {
         </Card.Body>
       </Card>
 
-      <Card className="status-card">
+      <Card className="col-3 status-card">
         <Card.Header>
           <span>Income</span>
           <Label type="monthly">Monthly</Label>
@@ -67,7 +67,7 @@ export default function StatusCards() {
         <Card.Body>
           <div className="value">40,886,200</div>
           <footer>
-            <span className="label">Total income</span>
+            <span className="text-label">Total income</span>
             <span className="percentage">
                   98%
                   <Icon type="rise" />

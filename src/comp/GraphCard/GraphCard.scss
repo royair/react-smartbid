@@ -1,4 +1,29 @@
 .graph-card {
+  .card-header {
+    .action-buttons {
+      button {
+        border: 1px solid var(--gray-200);
+        background-color: transparent;
+        padding: 3px 12px;
+        cursor: pointer;
+        outline-color: transparent;
+
+        &.selected {
+          box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.07);
+          cursor: initial;
+        }
+
+        &:first-child {
+          border-radius: 5px 0 0 5px;
+        }
+
+        &:last-child {
+          border-radius: 0 5px 5px 0;
+        }
+      }
+    }
+  }
+
   .card-body {
     display: flex;
 
@@ -24,7 +49,7 @@
             margin-bottom: 5px;
           }
 
-          .label {
+          .text-label {
             font-size: 12px;
           }
 

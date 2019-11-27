@@ -1,10 +1,6 @@
 import React from 'react';
-import { Icon } from 'antd';
 
-import SideNav from './comp/SideNav/SideNav';
-import StatusCards from './comp/StatusCards/StatusCards';
-import GraphCard from './comp/GraphCard/GraphCard';
-import MessagesCard from './comp/MessagesCard/MessagesCard';
+import { SideNav, StatusCards, GraphCard, MessagesCard, UserProjectCard, ToDoCard, TransactionsCard, } from '@comp';
 
 import './App.scss';
 
@@ -26,11 +22,26 @@ function App() {
           </div>
 
           <div className="row">
-            <div style={{ width: '33%' }}>
+            <div className="col-4">
               <MessagesCard />
             </div>
-          </div>
 
+            <div className="col-8">
+              <div className="row">
+                <div className="col-6">
+                  <UserProjectCard />
+                </div>
+                <div className="col-6">
+                  <ToDoCard />
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-12">
+                  <TransactionsCard />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

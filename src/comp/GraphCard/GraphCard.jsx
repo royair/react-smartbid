@@ -1,10 +1,9 @@
 import React from 'react';
 import { Icon } from 'antd';
 
-import Card from '../Card/Card';
-import Progress from '../Progress/Progress';
+import { Card, Progress } from '@comp';
 
-import imgGraph from '../../img/graph.png';
+import imgGraph from '@img/graph.png';
 
 import './GraphCard.scss';
 
@@ -14,9 +13,9 @@ export default function GraphCard() {
       <Card.Header>
         <span>Income</span>
         <div className="action-buttons">
-          <button>left</button>
-          <button>middle</button>
-          <button>right</button>
+          <button className="selected">Today</button>
+          <button>Monthly</button>
+          <button>Annual</button>
         </div>
       </Card.Header>
 
@@ -27,10 +26,10 @@ export default function GraphCard() {
             <li>
               <div className="value">2,346</div>
               <div className="flex flex-space-between">
-                <div className="label">Total orders in period</div>
+                <div className="text-label">Total orders in period</div>
                 <div className="percentage-value">
                   62%
-                  <Icon type="rise"/>
+                  <Icon type="rise" />
                 </div>
               </div>
               <Progress percent={62} />
@@ -39,7 +38,7 @@ export default function GraphCard() {
             <li>
               <div className="value">2,346</div>
               <div className="flex flex-space-between">
-                <div className="label">Total orders in period</div>
+                <div className="text-label">Total orders in period</div>
                 <div className="percentage-value">
                   99%
                   <Icon type="rise" />
@@ -51,7 +50,7 @@ export default function GraphCard() {
             <li>
               <div className="value">2,346</div>
               <div className="flex flex-space-between">
-                <div className="label">Total orders in period</div>
+                <div className="text-label">Total orders in period</div>
                 <div className="percentage-value">
                   33%
                   <Icon type="fall" />

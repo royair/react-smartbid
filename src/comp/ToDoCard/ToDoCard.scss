@@ -1,0 +1,20 @@
+.todo-card {
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      background-color: var(--gray-200);
+      padding: 7px 5px;
+      margin: 10px 0;
+      border-radius: 5px;
+
+      input[type='checkbox'] {
+        margin-right: 10px;
+
+        &:checked + span {
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.user-project-card {
+  table {
+    width: 100%;
+
+    thead {
+      tr {
+        border-bottom: 1px solid var(--gray-600);
+
+        td {
+          font-weight: 700;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+
+          &.percentage {
+            color: var(--turkoise);
+            font-weight: 700;
+
+            .anticon {
+              position: relative;
+              top: 2px;
+              margin-right: 2px;
+            }
+          }
+        }
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+
+    tr {
+      border-bottom: 1px solid var(--gray-200);
+
+      td {
+        padding: 10px 5px;
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,10 +1,9 @@
 import React from 'react';
 import { Icon } from 'antd';
 
-import Label from '../Label/Label';
-import Avatar from '../Avatar/Avatar';
+import { Label, Avatar } from '@comp';
 
-import profileImg from '../../img/profile-image.jpg';
+import profileImg from '@img/profile-image.jpg';
 
 import './SideNav.scss';
 

@@ -18,8 +18,9 @@ const TYPES = {
   }
 };
 
-export default function Label({ type, children, className, ...restProps }) {
+export default function Label({ type, children, className, style, ...restProps }) {
   return (
-    <span className={cn('Label', className)} style={{ backgroundColor: TYPES[type].backgroundColor }} {...restProps}>{children}</span>
+    <span className={cn('label', className)}
+          style={{ backgroundColor: TYPES[type].backgroundColor, ...style }} {...restProps}>{children}</span>
   );
 }

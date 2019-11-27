@@ -1,11 +1,13 @@
 .card {
   background-color: var(--white);
   border-top: 3px solid var(--gray-200);
+  width: 100%;
 
   .card-header {
     display: flex;
     justify-content: space-between;
-    padding: 10px 15px;
+    align-items: center;
+    padding: 15px 15px;
     border-bottom: 1px solid var(--gray-200);
     font-size: 12px;
     font-weight: 500;
@@ -23,7 +25,16 @@
   }
 
   .card-body {
-    padding: 20px;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: padding 0.2s ease 0.1s, max-height 0.1s ease;
+
+    &.is-open {
+      padding: 20px;
+      max-height: 100000px;
+      transition: padding 0.2s ease 0s, max-height 0.1s ease;
+    }
   }
 }
 
