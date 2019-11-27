@@ -6,7 +6,6 @@ import { Icon, Menu } from 'antd';
 import './Card.scss';
 
 export function ActionButtons({ isOpen, onToggle }) {
-
   return (
     <div className="action-buttons">
       <Icon type={isOpen ? 'up' : 'down'} onClick={onToggle} />
@@ -22,7 +21,8 @@ export function CardHeader({ className, withActionButtons, isOpen, onToggle, chi
       {children} {withActionButtons && <ActionButtons isOpen={isOpen} onToggle={onToggle} />}
     </div>
   );
-}
+};
+CardHeader.displayName = 'CardHeader';
 
 export function CardBody({ className, isOpen, children }) {
   return (
@@ -31,6 +31,7 @@ export function CardBody({ className, isOpen, children }) {
     </div>
   );
 }
+CardBody.displayName = 'CardBody';
 
 export default class Card extends Component {
   constructor(props) {
@@ -51,23 +52,25 @@ export default class Card extends Component {
   render() {
     const { className, children } = this.props;
     const { isOpen }              = this.state;
-    console.log({children});
-    const childHeader             = children.find((child) => child.type.name === 'CardHeader');
-    const childBody               = children.find((child) => child.type.name === 'CardBody');
-    const Header                  = childHeader
-      ? React.cloneElement(childHeader, {
-        isOpen,
-        onToggle: this.onToggle
-      })
-      : null;
-    const Body                    = childBody
-      ? React.cloneElement(children.find((child) => child.type.name === 'CardBody'), { isOpen })
-      : null;
 
     return (
       <div className={cn('card', className)}>
-        {Header}
-        {Body}
+        {React.Children.map(children, (child) => {
+          if (child.type.displayName === 'CardHeader') {
+            return React.cloneElement(child, {
+              isOpen,
+              onToggle: this.onToggle
+            });
+          }
+
+          if (child.type.displayName === 'CardBody') {
+            return React.cloneElement(child, {
+              isOpen,
+            });
+          }
+
+          return child;
+        })}
       </div>
     );
   }
