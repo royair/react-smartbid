@@ -51,11 +51,17 @@ export default class Card extends Component {
   render() {
     const { className, children } = this.props;
     const { isOpen }              = this.state;
-    const Header                  = React.cloneElement(children.find((child) => child.type.name === 'CardHeader'), {
-      isOpen,
-      onToggle: this.onToggle
-    });
-    const Body                    = React.cloneElement(children.find((child) => child.type.name === 'CardBody'), { isOpen });
+    const childHeader             = children.find((child) => child.type.name === 'CardHeader');
+    const childBody               = children.find((child) => child.type.name === 'CardBody');
+    const Header                  = childHeader
+      ? React.cloneElement(childHeader, {
+        isOpen,
+        onToggle: this.onToggle
+      })
+      : null;
+    const Body                    = childBody
+      ? React.cloneElement(children.find((child) => child.type.name === 'CardBody'), { isOpen })
+      : null;
 
     return (
       <div className={cn('card', className)}>
