@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import cn from 'classnames';
 
-import { Icon } from 'antd';
+import { Icon, Menu } from 'antd';
 
 import './Card.scss';
 
@@ -51,6 +51,7 @@ export default class Card extends Component {
   render() {
     const { className, children } = this.props;
     const { isOpen }              = this.state;
+    console.log({children});
     const childHeader             = children.find((child) => child.type.name === 'CardHeader');
     const childBody               = children.find((child) => child.type.name === 'CardBody');
     const Header                  = childHeader

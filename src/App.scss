@@ -1,6 +1,7 @@
 .App {
   display: flex;
   align-items: stretch;
+  min-height: 100%;
 
   > .left {
     flex-basis: 220px;
